@@ -5,9 +5,9 @@ services:
     build: .
     command: python /code/manage.py runserver 0.0.0.0:8000
     environment:
-      - ENVIRONMENT=development
+      - ENVIRONMENT=production
       - SECRET_KEY=p_o3vp1rg5)t^lxm9-43%0)s-=1qpeq%o7gfq+e4#*!t+_ev82
-      - DEBUG=1
+      - DEBUG=0
       - STRIPE_TEST_PUBLISHABLE_KEY=<pk_test_SApPHXHufzjhsh5Iuhb46h2900SLBrjUoW>
       - STRIPE_TEST_SECRET_KEY=<sk_test_XdgjDA1ADHFHeF1PmHmDBcxY00hQnIZtcT>
     volumes:
@@ -18,8 +18,4 @@ services:
       - db
   db:
     image: postgres:11
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
-
-volumes:
-  postgres_data:
+ 
