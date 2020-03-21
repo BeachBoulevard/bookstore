@@ -8,8 +8,8 @@ services:
       - ENVIRONMENT=production
       - SECRET_KEY=p_o3vp1rg5)t^lxm9-43%0)s-=1qpeq%o7gfq+e4#*!t+_ev82
       - DEBUG=0
-      - STRIPE_TEST_PUBLISHABLE_KEY=<pk_test_SApPHXHufzjhsh5Iuhb46h2900SLBrjUoW>
-      - STRIPE_TEST_SECRET_KEY=<sk_test_XdgjDA1ADHFHeF1PmHmDBcxY00hQnIZtcT>
+      - STRIPE_LIVE_PUBLISHABLE_KEY=<pk_live_4ERQslpx16eDT7Zjxy9pS4kK00izgXZFK7>
+      - STRIPE_LIVE_SECRET_KEY=<sk_live_Gt6UQODlSrZjSF2ovcOrz3CI009AQqg2Tb>
     volumes:
       - .:/code
     ports:
